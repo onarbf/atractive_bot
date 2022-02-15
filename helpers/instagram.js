@@ -12,6 +12,10 @@ const { instagramUsername, instagramPassword } = process.env;
 
 const instagramLogin = async ()=>{
   const client = new Instagram({ username: instagramUsername, password: instagramPassword, cookieStore });
+  console.log('instagram logging working 1');
+  console.log("instagramUsername",instagramUsername);
+  console.log("instagramPassword",instagramPassword);
+  console.log('instagram logging working 2');
   await client.login();
 
   return client;
