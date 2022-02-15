@@ -1,3 +1,4 @@
+require('dotenv').config();
 const cron = require('node-cron');
 
 const express = require ('express');
@@ -59,6 +60,6 @@ const main = async (oldImageId)=>{
 }
 
 
-server.listen(3000, ()=>{
+server.listen(process.env.SERVERPORT, ()=>{
   console.log('server running');
 })
