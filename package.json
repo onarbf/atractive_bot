@@ -1,0 +1,27 @@
+{
+  "name": "atractive_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cloudinary": "^1.28.1",
+    "cors": "^2.8.5",
+    "dotenv": "^14.1.0",
+    "express": "^4.17.2",
+    "instagram-web-api": "^2.2.2",
+    "node-cron": "^3.0.0",
+    "node-fetch": "^3.1.1",
+    "request": "^2.88.2",
+    "tough-cookie-filestore2": "^1.0.0",
+    "twitter-api-v2": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
