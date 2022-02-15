@@ -11,15 +11,18 @@ const {twitterLogin, createTweetWithImage} = require('./helpers/twitter.js');
 const {uploadImage} = require('./helpers/cloudinary.js');
 
 var mainImageId = undefined;
-//cron job. Limited to run 200 times per hour
-cron.schedule('* * * * *',async function() {
-
-  main(mainImageId);
-});
-
 server.get("/",(req,res)=>{
   res.send("baba gube 2022")
+  main(mainImageId);
 })
+
+//cron job. Limited to run 200 times per hour
+// cron.schedule('* * * * *',async function() {
+//
+//   // main(mainImageId);
+// });
+
+
 
 const main = async (oldImageId)=>{
 
