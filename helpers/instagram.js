@@ -17,7 +17,7 @@ const instagramLogin = async ()=>{
   console.log("instagramPassword",instagramPassword);
   console.log('instagram logging working 2');
   await client.login();
-
+  console.log("client", client);
   return client;
 }
 
